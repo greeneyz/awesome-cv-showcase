@@ -9,9 +9,10 @@ export const SkillsSection = () => {
       title: "Frontend Development",
       color: "text-blue-600",
       skills: [
-        "React.js", "Vue.js", "Angular", "TypeScript", "JavaScript", 
-        "HTML5", "CSS3", "Tailwind CSS", "SCSS", "Bootstrap",
-        "Vue Store", "Redux", "Next.js", "Responsive Design"
+        "React.js", "Vue.js", "Angular", "AngularJS", "TypeScript", "JavaScript", 
+        "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Bootstrap", "Material UI",
+        "Vue Store", "Redux", "Next.js", "Responsive Design", "ECMAScript-ES6/7",
+        "Cascading Style Sheets (CSS)", "jQuery", "Web UI"
       ]
     },
     {
@@ -19,9 +20,9 @@ export const SkillsSection = () => {
       title: "Backend Development",
       color: "text-green-600",
       skills: [
-        "Node.js", "Express.js", "Python", ".NET Framework", 
-        "RESTful APIs", "GraphQL", "Microservices", "API Integration",
-        "Authentication & Authorization", "JWT", "OAuth"
+        "Node.js", "Express.js", "Python", ".NET Framework", "PHP", "Laravel",
+        "RESTful APIs", "GraphQL", "Microservices", "API Integration", "Flask",
+        "Authentication & Authorization", "JWT", "OAuth", "UnixShell", "Java SDK"
       ]
     },
     {
@@ -29,10 +30,10 @@ export const SkillsSection = () => {
       title: "Cloud & DevOps",
       color: "text-purple-600",
       skills: [
-        "Microsoft Azure", "AWS", "Azure DevOps", "Docker", 
-        "Kubernetes", "CI/CD Pipelines", "Infrastructure as Code",
-        "Azure Functions", "Azure Developer Associate", "Jenkins",
-        "GitHub Actions", "Terraform"
+        "Microsoft Azure", "AWS", "Azure DevOps", "Docker", "Google Cloud Platform",
+        "Kubernetes", "CI/CD Pipelines", "Infrastructure as Code", "Jenkins",
+        "Azure Functions", "Azure Developer Associate", "GitHub Actions",
+        "Terraform", "Webpack", "Grunt", "Maven", "Azure SQL Database"
       ]
     },
     {
@@ -40,10 +41,10 @@ export const SkillsSection = () => {
       title: "Data Engineering",
       color: "text-orange-600",
       skills: [
-        "Microsoft Fabrics", "Power BI", "Tableau", "SQL", "MSSQL",
-        "PostgreSQL", "Python", "Pandas", "ETL Pipelines", 
-        "Data Transformation", "Jupyter Notebooks", "Data Analytics",
-        "AWS S3", "Genesys", "Keycloak"
+        "Microsoft Fabrics", "Power BI", "Tableau", "SQL", "MSSQL", "PostgreSQL",
+        "Python", "Pandas", "ETL", "Data Pipelines", "Data Transformation", 
+        "Jupyter Notebooks", "Data Analytics", "AWS S3", "Genesys", "NoSQL",
+        "MS Excel", "Data Visualization", "Machine Learning", "MQTT"
       ]
     },
     {
@@ -51,10 +52,10 @@ export const SkillsSection = () => {
       title: "Tools & Technologies",
       color: "text-red-600",
       skills: [
-        "Git", "GitHub", "Jira", "Confluence", "Optimizely CMS", 
-        "Contentful", "Strapi", "Episerver", "Salesforce", 
-        "Scrum", "Agile", "SAFe", "WebPack", "Vite", "Maven",
-        "Postman", "Draw.io"
+        "Git", "GitHub", "Jira", "Confluence", "Optimizely CMS", "Contentful", 
+        "Strapi", "Episerver", "Salesforce", "Scrum", "Agile", "SAFe", "Keycloak",
+        "Postman", "Draw.io", "Visual Studio Code", "Android Studio", "iOS Development",
+        "Cordova", "React Native", "phpMyAdmin", "JSON Server", "Linux", "Ubuntu"
       ]
     }
   ];

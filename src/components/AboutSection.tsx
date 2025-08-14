@@ -4,9 +4,9 @@ import { GraduationCap, Award, Globe, Code } from "lucide-react";
 
 export const AboutSection = () => {
   const stats = [
-    { icon: Code, label: "Years Experience", value: "8+" },
+    { icon: Code, label: "Years Experience", value: "15+" },
     { icon: Globe, label: "Countries Worked", value: "3+" },
-    { icon: Award, label: "Certifications", value: "4+" },
+    { icon: Award, label: "Certifications", value: "5+" },
     { icon: GraduationCap, label: "Degrees", value: "3" },
   ];
 
@@ -29,14 +29,19 @@ export const AboutSection = () => {
             <div>
               <h3 className="text-2xl font-semibold text-foreground mb-4">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                With over 8 years of experience in software development, I've had the privilege of working 
-                across multiple continents and with diverse teams. My journey began with a passion for 
-                problem-solving and has evolved into expertise in building scalable, cloud-native applications.
+                With over 15 years of comprehensive experience spanning from 2009 to 2025, I've had the privilege of working 
+                across multiple continents and with diverse teams from Finland to Norway and Pakistan. My journey began with a passion for 
+                data analysis and has evolved into expertise in building scalable, cloud-native applications and leading development teams.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 I specialize in developing robust data engineering capabilities, designing and maintaining ETL pipelines, 
                 performing data transformation using Python, Pandas, and SQL, and delivering actionable insights 
-                through Power BI, Tableau, and Jupyter notebooks.
+                through Power BI, Tableau, and Jupyter notebooks. My experience spans from early career work in healthcare data analysis
+                to recent leadership roles in enterprise-scale solutions.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Currently working with cutting-edge technologies including Microsoft Fabrics, Azure cloud services, and modern 
+                JavaScript frameworks, I continue to push the boundaries of what's possible in software development and data engineering.
               </p>
             </div>
 
@@ -48,14 +53,15 @@ export const AboutSection = () => {
                 <Badge variant="outline" className="text-primary border-primary">Collaboration</Badge>
                 <Badge variant="outline" className="text-primary border-primary">Continuous Learning</Badge>
                 <Badge variant="outline" className="text-primary border-primary">Excellence</Badge>
+                <Badge variant="outline" className="text-primary border-primary">Cross-cultural Communication</Badge>
               </div>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-3">Languages</h4>
               <div className="flex gap-4">
-                <Badge className="bg-primary text-primary-foreground">English - Fluent</Badge>
-                <Badge className="bg-primary text-primary-foreground">Finnish - Proficient</Badge>
+                <Badge className="bg-primary text-primary-foreground">English - Native Proficiency</Badge>
+                <Badge className="bg-primary text-primary-foreground">Finnish - Limited Working Proficiency</Badge>
               </div>
             </div>
           </div>

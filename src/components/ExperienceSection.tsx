@@ -78,6 +78,185 @@ export const ExperienceSection = () => {
         "Integrated Contentful as headless CMS for dynamic content management",
         "Collaborated with festival stakeholders for tailored attendee needs"
       ]
+    },
+    {
+      title: "IDigi Development Platform",
+      company: "Ilmarinen",
+      role: "Senior Software Developer",
+      duration: "Jul 2021 - Nov 2022",
+      location: "Finland",
+      technologies: ["React", "Redux", "Web UI", "Bootstrap", "REST API", "Confluence", "GitHub", "Episerver", "Google Cloud Platform", "Jenkins", "Optimizely CMS", "TypeScript", "IAM", "Jira"],
+      description: "Modernized and architected Ilmarinen's web-based customer-facing platform, ensuring scalability, performance, and alignment with design and accessibility standards. The application facilitates self-service functionalities for insured individuals and employers while integrating securely with backend services and internal data systems.",
+      highlights: [
+        "Spearheaded frontend architecture design, aligning technical implementation with Ilmarinen's brand",
+        "Actively collaborated with UI/UX teams and product stakeholders for pixel-perfect implementation",
+        "Worked alongside testing team to identify edge cases and guarantee stability across releases",
+        "Built dynamic and responsive UIs using ReactJS, Redux, and Bootstrap"
+      ]
+    },
+    {
+      title: "Kesko Telesales Renewal",
+      company: "Kesko",
+      role: "Senior Software Developer",
+      duration: "Oct 2020 - Jun 2021",
+      location: "Finland",
+      technologies: ["Redux", "React", "Confluence", "Cascading Style Sheets (CSS)", "Jira", "GitHub", "Azure Functions", "Azure DevOps", "Node.js", "Salesforce Integrations"],
+      description: "Single Page Application (SPA) designed to manage and streamline internal order entry and fulfillment processes. The application provided a rich, interactive UI with real-time updates and integrations with Salesforce for customer and order data, deployed on Microsoft Azure for scalability and high availability.",
+      highlights: [
+        "Led frontend development of SPA using ReactJS and Redux",
+        "Developed real-time features and keyboard shortcut functionalities to boost user productivity",
+        "Designed state management patterns with Redux to ensure application data consistency",
+        "Built and integrated API endpoints using Microsoft Azure Function Apps"
+      ]
+    },
+    {
+      title: "HSE Mobile Application",
+      company: "Neles (now part of Valmet)",
+      role: "Senior Software Developer",
+      duration: "May 2020 - Jul 2020",
+      location: "Finland",
+      technologies: ["Android Studio", "iOS Application Development", "Cordova", "JavaScript", "Legacy Code Maintenance", "Cross Platform Development", "Agile Development"],
+      description: "Enhanced an existing Cordova-based cross-platform mobile application used internally by Neles personnel. The app, available on both Android and iOS, supported tasks such as monitoring valve statuses, capturing data on the field, and providing real-time updates to the central system.",
+      highlights: [
+        "Contributed to feature enhancements in legacy Cordova codebase",
+        "Implemented new modules and user-facing features without introducing regressions",
+        "Collaborated with team to analyze technical debt and identify opportunities for scalable improvements"
+      ]
+    },
+    {
+      title: "Metso Equipment Enhancement",
+      company: "Metso Outotec",
+      role: "Senior Software Developer",
+      duration: "May 2020 - Jul 2020",
+      location: "Finland",
+      technologies: ["AngularJS", "Redux", "GitHub", "Node.js", "CI/CD", "JavaScript", "JSON Server", "Legacy Code Maintenance", "Cloud Deployment", "Agile Development"],
+      description: "Enhanced an established AngularJS frontend application used internally by Metso Outotec. The application facilitates various business processes and requires continuous feature updates to adapt to evolving operational needs.",
+      highlights: [
+        "Contributed as Frontend Developer, adding new features and functionalities within the existing AngularJS codebase",
+        "Ensured smooth integration of new features without impacting existing workflows or system stability",
+        "Used JSON server for local development and version control to speed up development and improve team collaboration",
+        "Leveraged Microsoft Azure cloud services to deploy the application, ensuring scalability, reliability, and adherence to security best practices"
+      ]
+    },
+    {
+      title: "Metsäverkko Forestry Management SPA",
+      company: "Metsäverkko",
+      role: "Senior Software Developer",
+      duration: "Feb 2020 - Oct 2020",
+      location: "Finland",
+      technologies: ["AngularJS", "Azure DevOps", "Jira", "TypeScript", "Code Optimizations", "CSS", "Agile Development"],
+      description: "Developed a responsive and feature-rich Single Page Application (SPA) using AngularJS to support Metsäverkko's forestry management operations. The SPA delivers real-time data and complex workflows essential for daily business processes.",
+      highlights: [
+        "Served as Full Stack Developer, driving both frontend and backend development tasks",
+        "Restructured stylesheets and optimized code bundling to improve application performance and maintainability",
+        "Led implementation of new features, ensuring alignment with client requirements and project objectives",
+        "Actively participated in Agile ceremonies, collaborating closely with a diverse team"
+      ]
+    },
+    {
+      title: "Lyse Support Tool",
+      company: "Lyse",
+      role: "Software Developer",
+      duration: "Jun 2019 - Jan 2020",
+      location: "Norway",
+      technologies: ["JavaScript", "TypeScript", "Angular 7", "Node.js", "Authentication & Authorisation", "JWT - JSON Web Token"],
+      description: "Developed the frontend of the Lyse Support Tool using Angular 7 and Material-UI, focusing on creating an intuitive and responsive interface for internal support teams. The application facilitates streamlined issue tracking and resolution.",
+      highlights: [
+        "Worked as Software Developer, designing UI components with AngularJS and styling using SCSS and Material-UI design library",
+        "Configured project environment with appropriate package managers for streamlined dependency management",
+        "Implemented secure authentication on the frontend using JWT tokens to protect access and enhance security"
+      ]
+    },
+    {
+      title: "Lyse Application Enhancement",
+      company: "Lyse",
+      role: "Software Developer",
+      duration: "Sept 2019 - Dec 2019",
+      location: "Norway",
+      technologies: ["UnixShell", "Node.js", "Angular 7", "Material UI"],
+      description: "Worked on enhancing the existing Lyse Support Tool frontend, built primarily with Angular 7+ and Material-UI, with some modules implemented as standalone JSP applications.",
+      highlights: [
+        "Acted as Software Developer, delivering updates and refinements at the template and module level",
+        "Made frontend changes within AngularJS 7+ framework and contributed to JSP module updates and deployments",
+        "Ensured alignment of UI/UX elements with customer expectations and functional needs"
+      ]
+    },
+    {
+      title: "Lyse Ubisecure Templating",
+      company: "Lyse",
+      role: "Software Developer",
+      duration: "Sept 2019 - Dec 2019",
+      location: "Norway",
+      technologies: ["JavaScript", "Linux, Ubuntu", "UnixShell", "Node.js"],
+      description: "Performed UI template updates for applications hosted on a Linux-based Ubisecure server, a platform used for identity and access management.",
+      highlights: [
+        "Worked as Software Developer making UI changes directly in templates deployed on the Ubisecure environment",
+        "Ensured compatibility and smooth operation within the Linux server infrastructure"
+      ]
+    },
+    {
+      title: "Data Analysis of Vehicle's CAN Data",
+      company: "Millisecond Oy",
+      role: "Data Engineer",
+      duration: "Aug 2018 - Apr 2019",
+      location: "Finland",
+      technologies: ["Azure SQL Database", "React", "Tableau Practitioner", "Microsoft Power BI", "Python", "Flask", ".NET Framework", "ETL", "Data Engineering", "REST API", "PostgreSQL", "NoSQL", "MQTT", "Data Visualization", "Machine Learning"],
+      description: "Developed a comprehensive telemetry system to collect, process, and visualize real-time data from heavy-duty mining vehicles and Bluetooth/Wi-Fi sensors distributed across mining areas. The platform supports cloud-based processing, monitoring, and machine learning-driven analytics.",
+      highlights: [
+        "Served as Data Engineer, designing and maintaining robust data pipelines to ingest raw telemetry from vehicles and sensors",
+        "Performed extensive data cleaning, deduplication, and transformation to ensure high-quality datasets for analysis",
+        "Addressed missing data challenges using statistical and domain-specific techniques",
+        "Exported processed data in multiple formats (CSV, JSON, Parquet) for visualization and ML use",
+        "Collaborated with data scientists to prepare feature-rich datasets",
+        "Developed backend services to manage and expose data securely via RESTful APIs",
+        "Designed scalable data models and managed cloud storage/databases",
+        "Facilitated reliable, secure communication between IoT devices and backend using message queues or MQTT protocols",
+        "Built web dashboards and visualization tools using modern frontend frameworks"
+      ]
+    },
+    {
+      title: "Frontend Development Dashboard",
+      company: "Millisecond Oy",
+      role: "Software Developer",
+      duration: "Feb 2018 - Aug 2018",
+      location: "Finland",
+      technologies: ["HTML5", "JavaScript", "React", "ECMAScript-ES6/7", "Redux", "Node.js"],
+      description: "Customized a ReactJS-based dashboard template to fit the specific needs of a key client. The dashboard features dynamic graphs and tables for real-time data visualization and insights.",
+      highlights: [
+        "Acted as Software Developer, tailoring an off-the-shelf ReactJS, Redux, and JavaScript template to meet client requirements",
+        "Developed and integrated dashboard components including interactive graphs and data tables",
+        "Ensured seamless state management using Redux to handle dynamic data updates and user interactions"
+      ]
+    },
+    {
+      title: "Sport's Arena Web Portal Customisation",
+      company: "Unikie Oy",
+      role: "Full Stack Developer",
+      duration: "Aug 2017 - Dec 2017",
+      location: "Finland",
+      technologies: ["AngularJS", "Node.js", "PHP", "phpMyAdmin"],
+      description: "Customized a Sports Arena web portal built with Angular 2, Node.js, and Laravel, designed to manage and deliver sports-related content and services to end users.",
+      highlights: [
+        "Served as Full Stack Developer, working on both frontend and backend components",
+        "Customized Angular 2 frontend features to improve user interaction and UI responsiveness",
+        "Developed backend logic and APIs using Node.js and PHP (Laravel framework)",
+        "Managed database operations with phpMyAdmin, ensuring data integrity and efficient queries"
+      ]
+    },
+    {
+      title: "Data Analysis of Polio Vaccination Data",
+      company: "Micromerger",
+      role: "Software Developer",
+      duration: "Nov 2011 - Aug 2012",
+      location: "Pakistan",
+      technologies: ["Java SDK", "Python", "MS Excel", "Pandas", "SQL"],
+      description: "Developed a data analysis system to process weekly polio vaccination data collected by field teams visiting homes nationwide. The data was used to generate dashboards and charts to monitor vaccination coverage and support decision-making.",
+      highlights: [
+        "Software Developer responsible for handling data processing and visualization tasks",
+        "Utilized Java SDK to develop a standalone desktop application embedding key charts",
+        "Employed Python, Pandas, and SQL for data cleaning, transformation, and analysis",
+        "Created dashboards and visualizations in MS Excel for reporting and insights"
+      ]
     }
   ];
 

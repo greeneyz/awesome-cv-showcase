@@ -33,23 +33,34 @@ export const EducationSection = () => {
       name: "Microsoft Certified: Azure Developer Associate",
       code: "AZ-204",
       issuer: "Microsoft",
-      type: "Cloud Development"
+      type: "Cloud Development",
+      date: "May 2022"
     },
     {
       name: "Microsoft Certified: Azure Fundamentals",
       issuer: "Microsoft",
-      type: "Cloud Fundamentals"
+      type: "Cloud Fundamentals",
+      date: "Sept 2020"
     },
     {
       name: "Microsoft Certified: Azure Data Fundamentals",
       issuer: "Microsoft",
-      type: "Data Engineering"
+      type: "Data Engineering",
+      date: "Jun 2023"
     },
     {
       name: "AWS Certified Cloud Practitioner",
       code: "Foundational",
       issuer: "Amazon Web Services",
-      type: "Cloud Fundamentals"
+      type: "Cloud Fundamentals",
+      date: "Aug 2023"
+    },
+    {
+      name: "ITIL® Foundation Certification",
+      code: "IT Service Management",
+      issuer: "ITIL",
+      type: "Service Management",
+      date: "Apr 2015"
     }
   ];
 
@@ -57,12 +68,32 @@ export const EducationSection = () => {
     {
       name: "Microsoft Fabrics Data Engineering",
       provider: "Microsoft",
-      focus: "Data Engineering"
+      focus: "Data Engineering",
+      date: "May 2025"
     },
     {
       name: "Microsoft Azure DevOps",
       provider: "Microsoft",
-      focus: "DevOps & CI/CD"
+      focus: "DevOps & CI/CD",
+      date: "Jun 2025"
+    },
+    {
+      name: "The Data Scientist's Toolbox",
+      provider: "Coursera",
+      focus: "Data Science",
+      date: "Sept 2016"
+    },
+    {
+      name: "Machine Learning",
+      provider: "Coursera",
+      focus: "AI & ML",
+      date: "Nov 2017"
+    },
+    {
+      name: "Knowledge Management and Big Data in Business",
+      provider: "Coursera",
+      focus: "Data Management",
+      date: "Nov 2017"
     }
   ];
 
