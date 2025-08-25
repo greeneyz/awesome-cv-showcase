@@ -5,6 +5,23 @@ import { Calendar, MapPin, Building } from "lucide-react";
 export const ExperienceSection = () => {
   const experiences = [
     {
+      title: "TMS Queue System",
+      company: "TietoEvry",
+      role: "Senior Software Engineer",
+      duration: "Mar 2025 - Jul 2025",
+      location: "Finland",
+      technologies: ["Jira", "GitHub", "Spring Boot", "Keycloak", "Angular 18", "Docker", "JSON Server"],
+      description: "The TMS Queue System was developed to streamline customer service management by allowing clients to obtain queues while enabling internal employees to adjust and manage them in real-time. Unlike traditional queue systems, this solution introduced dynamic queue handling and time optimization, improving efficiency for both service providers and end customers.",
+      highlights: [
+        "Implemented for the banking sector in Finland, where efficient time and queue management is critical",
+        "Integrated Keycloak authentication into the Spring Boot backend for secure access control",
+        "Developed frontend features in Angular 18, delivering a modern and responsive user experience",
+        "Built and connected APIs between backend and frontend to enable seamless real-time queue management",
+        "Delivered a secure, scalable, and user-friendly queue management system",
+        "Enabled real-time queue adjustments, helping banks reduce waiting times and optimize service delivery"
+      ]
+    },
+    {
       title: "Video Archive Solution",
       company: "TietoEvry",
       role: "Software Architect",
