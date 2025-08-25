@@ -49,14 +49,6 @@ export const HeroSection = () => {
               >
                 View My Work
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-                onClick={() => scrollToSection('contact')}
-              >
-                Get In Touch
-              </Button>
             </div>
             
             {/* Social links */}
@@ -64,7 +56,12 @@ export const HeroSection = () => {
               <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/20">
                 <Github className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/20">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/20"
+                onClick={() => window.open('https://www.linkedin.com/in/imtiazasim', '_blank')}
+              >
                 <Linkedin className="w-5 h-5" />
               </Button>
               <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/20">
@@ -76,22 +73,24 @@ export const HeroSection = () => {
           {/* Right content - Profile image placeholder */}
           <div className="lg:w-1/2 mt-16 lg:mt-0 flex justify-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-card shadow-glow animate-float">
-                <div className="w-full h-full rounded-full bg-primary-foreground/20 flex items-center justify-center">
-                  <div className="text-6xl font-bold text-primary-foreground/60">AI</div>
-                </div>
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-card shadow-glow animate-float overflow-hidden">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Asim Imtiaz - Senior Software Engineer" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               {/* Floating tech badges */}
-              <Badge className="absolute top-16 -left-8 bg-primary-foreground text-primary animate-float" style={{ animationDelay: '1s' }}>
+              <Badge className="absolute top-16 -left-8 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '1s' }}>
                 React
               </Badge>
-              <Badge className="absolute top-32 -right-12 bg-primary-foreground text-primary animate-float" style={{ animationDelay: '2s' }}>
+              <Badge className="absolute top-32 -right-12 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '2s' }}>
                 Azure
               </Badge>
-              <Badge className="absolute bottom-32 -left-16 bg-primary-foreground text-primary animate-float" style={{ animationDelay: '3s' }}>
+              <Badge className="absolute bottom-32 -left-16 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '3s' }}>
                 TypeScript
               </Badge>
-              <Badge className="absolute bottom-16 -right-8 bg-primary-foreground text-primary animate-float" style={{ animationDelay: '4s' }}>
+              <Badge className="absolute bottom-16 -right-8 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '4s' }}>
                 Node.js
               </Badge>
             </div>

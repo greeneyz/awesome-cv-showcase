@@ -15,8 +15,8 @@ export const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/asim-imtiaz",
-      href: "https://linkedin.com/in/asim-imtiaz",
+      value: "linkedin.com/in/imtiazasim",
+      href: "https://www.linkedin.com/in/imtiazasim",
       primary: true
     },
     {
@@ -120,29 +120,28 @@ export const ContactSection = () => {
                 <Button 
                   className="w-full bg-primary hover:bg-primary-dark text-primary-foreground shadow-lg hover:shadow-glow transition-all"
                   size="lg"
+                  onClick={() => {
+                    // Create a temporary link to download PDF
+                    const link = document.createElement('a');
+                    link.href = '/resume.pdf'; // You'll need to add this PDF file to public folder
+                    link.download = 'Asim_Imtiaz_Resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
                 >
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
                 </Button>
                 
-                <div className="grid grid-cols-2 gap-4">
-                  <Button 
-                    variant="outline" 
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                    onClick={() => window.open('mailto:asim.imtiaz@example.com', '_blank')}
-                  >
-                    <Mail className="w-4 h-4 mr-2" />
-                    Email Me
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                    onClick={() => window.open('https://linkedin.com/in/asim-imtiaz', '_blank')}
-                  >
-                    <Linkedin className="w-4 h-4 mr-2" />
-                    LinkedIn
-                  </Button>
-                </div>
+                <Button 
+                  variant="outline" 
+                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  onClick={() => window.open('https://www.linkedin.com/in/imtiazasim', '_blank')}
+                >
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </Button>
               </CardContent>
             </Card>
 
