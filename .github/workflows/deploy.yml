@@ -2,36 +2,33 @@ name: Deploy Vite React app to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-
-permissions:
-  contents: write
+    branches: [ main ]   # 👈 change if your default branch is not "main"
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Vite app
+      - name: Build project
         run: npm run build
 
-      - name: Add 404.html
+      - name: Add 404.html for SPA routing
         run: cp dist/index.html dist/404.html
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          branch: gh-pages
-          folder: dist
-          token: ${{ secrets.GITHUB_TOKEN }}
-          clean: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
