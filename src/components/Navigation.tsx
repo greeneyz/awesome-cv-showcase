@@ -31,7 +31,7 @@ export const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-background/95 backdrop-blur-md shadow-lg-custom border-b border-border' 
+        ? 'bg-primary-foreground/95 backdrop-blur-md shadow-lg-custom border-b border-border' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 py-4">
@@ -39,7 +39,7 @@ export const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-2xl font-bold text-primary hover:text-primary-dark transition-colors"
+            className="text-2xl font-bold text-primary-foreground hover:text-primary transition-colors"
           >
             Asim Imtiaz
           </button>
@@ -50,7 +50,7 @@ export const Navigation = () => {
               <button
                 key={item.section}
                 onClick={() => scrollToSection(item.section)}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-primary-foreground hover:text-primary transition-colors font-medium"
               >
                 {item.label}
               </button>
@@ -68,7 +68,7 @@ export const Navigation = () => {
             variant="ghost"
             size="icon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-foreground hover:text-primary"
+            className="lg:hidden text-primary-foreground hover:text-primary"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </Button>
@@ -76,13 +76,13 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 border-t border-border bg-background/95 backdrop-blur-md rounded-lg shadow-lg-custom">
+          <div className="lg:hidden mt-4 py-4 border-t border-border bg-primary-foreground/95 backdrop-blur-md rounded-lg shadow-lg-custom">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.section}
                   onClick={() => scrollToSection(item.section)}
-                  className="text-left px-4 py-2 text-foreground hover:text-primary hover:bg-accent/50 rounded transition-colors font-medium"
+                  className="text-left px-4 py-2 text-primary hover:text-primary-foreground hover:bg-accent/50 rounded transition-colors font-medium"
                 >
                   {item.label}
                 </button>

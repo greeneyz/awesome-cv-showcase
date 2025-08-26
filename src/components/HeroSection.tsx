@@ -87,7 +87,10 @@ export const HeroSection = () => {
               <Badge className="absolute top-32 -right-12 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '2s' }}>
                 Azure
               </Badge>
-              <Badge className="absolute bottom-32 -left-16 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '3s' }}>
+              <Badge className="absolute bottom-40 -left-20 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '2.5s' }}>
+                Data Engineering
+              </Badge>
+              <Badge className="absolute bottom-24 -left-16 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '3s' }}>
                 TypeScript
               </Badge>
               <Badge className="absolute bottom-16 -right-8 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '4s' }}>
