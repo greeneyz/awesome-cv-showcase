@@ -23,7 +23,7 @@ jobs:
         run: npm run build
 
       - name: Add 404.html
-        run: cp dist/awesome-cv-showcase/index.html dist/awesome-cv-showcase/404.html
+        run: cp dist/index.html dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
