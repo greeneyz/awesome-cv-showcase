@@ -26,11 +26,11 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Build Angular app
-      run: npm run build -- --base-href "/awesome-cv-showcase/"
+    - name: Build Vite app
+      run: npm run build   # no base-href here!
       
     - name: Copy index.html to 404.html
-      run: cp dist/<your-project-name>/index.html dist/<your-project-name>/404.html
+      run: cp dist/index.html dist/404.html
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
@@ -38,7 +38,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './dist/<your-project-name>'
+        path: './dist'
         
     - name: Deploy to GitHub Pages
       id: deployment
