@@ -20,4 +20,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: './', // <- add this line to fix GitHub Pages 404s
+  },
 }));
