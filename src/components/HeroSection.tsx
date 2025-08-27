@@ -75,7 +75,7 @@ export const HeroSection = () => {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-card shadow-glow animate-float overflow-hidden">
                 <img 
-                  src="/lovable-uploads/50cab3a9-82c5-4254-be0d-3e932175ef37.png" 
+                  src="./lovable-uploads/50cab3a9-82c5-4254-be0d-3e932175ef37.png" 
                   alt="Asim Imtiaz - Senior Software Engineer" 
                   className="w-full h-full object-cover rounded-full"
                 />
