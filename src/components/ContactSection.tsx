@@ -117,22 +117,6 @@ export const ContactSection = () => {
                 <CardTitle className="text-2xl text-foreground">Quick Actions</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Button 
-                  className="w-full bg-primary hover:bg-primary-dark text-primary-foreground shadow-lg hover:shadow-glow transition-all"
-                  size="lg"
-                  onClick={() => {
-                    // Create a temporary link to download PDF
-                    const link = document.createElement('a');
-                    link.href = `${import.meta.env.BASE_URL}Asim-Imtiaz-R.pdf`;
-                    link.download = 'Asim_Imtiaz_Resume.pdf';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
-                >
-                  <Download className="w-5 h-5 mr-2" />
-                  Download Resume
-                </Button>
                 
                 <Button 
                   variant="outline" 
