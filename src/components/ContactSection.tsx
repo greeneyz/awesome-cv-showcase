@@ -123,7 +123,7 @@ export const ContactSection = () => {
                   onClick={() => {
                     // Create a temporary link to download PDF
                     const link = document.createElement('a');
-                    link.href = '/Asim-Imtiaz-R.pdf';
+                    link.href = `${import.meta.env.BASE_URL}Asim-Imtiaz-R.pdf`;
                     link.download = 'Asim_Imtiaz_Resume.pdf';
                     document.body.appendChild(link);
                     link.click();
