@@ -39,7 +39,11 @@ export const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-2xl font-bold text-primary-foreground hover:text-primary transition-colors"
+            className={`text-2xl font-bold transition-colors ${
+              isScrolled 
+                ? 'text-primary hover:text-primary/80' 
+                : 'text-primary-foreground hover:text-primary'
+            }`}
           >
             Asim Imtiaz
           </button>
@@ -50,14 +54,22 @@ export const Navigation = () => {
               <button
                 key={item.section}
                 onClick={() => scrollToSection(item.section)}
-                className="text-primary-foreground hover:text-primary transition-colors font-medium"
+                className={`transition-colors font-medium ${
+                  isScrolled 
+                    ? 'text-primary hover:text-primary/80' 
+                    : 'text-primary-foreground hover:text-primary'
+                }`}
               >
                 {item.label}
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-lg hover:shadow-glow transition-all"
+              className={`shadow-lg hover:shadow-glow transition-all ${
+                isScrolled 
+                  ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
+                  : 'bg-primary hover:bg-primary-dark text-primary-foreground'
+              }`}
             >
               Get In Touch
             </Button>
@@ -68,7 +80,11 @@ export const Navigation = () => {
             variant="ghost"
             size="icon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-primary-foreground hover:text-primary"
+            className={`lg:hidden transition-colors ${
+              isScrolled 
+                ? 'text-primary hover:text-primary/80' 
+                : 'text-primary-foreground hover:text-primary'
+            }`}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </Button>
