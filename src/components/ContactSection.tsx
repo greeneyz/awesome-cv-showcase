@@ -1,15 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Linkedin, Github, MapPin, Globe } from "lucide-react";
+import { Mail, Linkedin, Phone, MapPin, Globe } from "lucide-react";
 
 export const ContactSection = () => {
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "asim.imtiaz@example.com",
-      href: "mailto:asim.imtiaz@example.com",
+      value: "asim.ali.awan@gmail.com",
+      href: "mailto:asim.ali.awan@gmail.com",
       primary: true
     },
     {
@@ -20,10 +20,10 @@ export const ContactSection = () => {
       primary: true
     },
     {
-      icon: Github,
-      label: "GitHub",
-      value: "github.com/asim-imtiaz",
-      href: "https://github.com/asim-imtiaz",
+      icon: Phone,
+      label: "Phone",
+      value: "+358449706955",
+      href: "tel:+358449706955",
       primary: false
     },
     {
