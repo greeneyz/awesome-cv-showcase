@@ -36,6 +36,9 @@ jobs:
       - name: Add 404.html for SPA routing
         run: cp dist/index.html dist/404.html
 
+      - name: Add .nojekyll to disable Jekyll processing
+        run: touch dist/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
