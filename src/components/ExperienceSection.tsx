@@ -5,6 +5,42 @@ import { Calendar, MapPin, Building } from "lucide-react";
 export const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Lifecare AI Assistant",
+      company: "TietoEvry",
+      role: "Frontend Developer",
+      duration: "2024 - 2025",
+      location: "Finland",
+      technologies: ["AngularJS", "Angular Store", "SignalR", "TypeScript", "Real-time Data", "AI Integration", "Healthcare Systems"],
+      description: "Lifecare AI Assistant is an AI-powered chatbot that integrates with the Lifecare system, offering real-time, conversational access to patient data and system insights through an intuitive interface. Lifecare is a widely adopted healthcare system used by medical institutions to manage patient records and clinical data.",
+      highlights: [
+        "Implemented the AngularJS interface for the AI Assistant chatbot",
+        "Utilized Angular Store and SignalR for real-time data updates and state management",
+        "Collaborated with backend and AI teams to ensure seamless data flow between the chatbot, UI, and Lifecare system",
+        "Contributed to the architecture and performance optimization of a responsive and secure frontend application",
+        "Delivered a user-friendly interface that improved the speed and efficiency of patient data access for healthcare staff",
+        "Enhanced clinical workflows by integrating real-time updates and conversational AI capabilities into Lifecare's ecosystem"
+      ]
+    },
+    {
+      title: "Data Platform Migration",
+      company: "Telia Finland",
+      role: "Data Engineer",
+      duration: "2024 - 2025",
+      location: "Finland",
+      technologies: ["Apache Spark", "Apache Airflow", "Apache Iceberg", "AWS S3", "Hadoop HDFS", "Python", "Kubernetes", "Parquet", "Data Engineering", "ETL"],
+      description: "Led and delivered a large-scale data engineering program for Telia Finland focused on migrating diverse enterprise datasets from legacy Hadoop (HDFS) and external ingestion mechanisms into the modern Park data platform using S3, Apache Iceberg, Spark, and Airflow. The scope covered IME stream datasets, MFT-based datasets, and API-based datasets.",
+      highlights: [
+        "Designed a chunk-based HDFS-to-S3 migration approach to safely move large datasets without relying on local temporary storage",
+        "Managed partition-heavy historical data (year/month/day) and ensured accurate reconciliation between HDFS, S3 landing zones, and Iceberg tables",
+        "Built and maintained schema-first Apache Iceberg tables to support very wide schemas (200+ columns) with evolving structures",
+        "Stabilized Spark ingestion by introducing a file-by-file ingestion model, effectively resolving repeated OOM kills and Kubernetes pod failures",
+        "Implemented ingestion logic to dynamically align schemas, add missing columns, normalize timestamps, and handle type mismatches prior to Iceberg writes",
+        "Enabled safe re-runs and partial recovery, allowing Airflow DAGs to resume ingestion without duplicating or losing data",
+        "Orchestrated and monitored ingestion pipelines using Apache Airflow, ensuring reliable scheduling, alerting, and operational visibility",
+        "Performed detailed data validation and reconciliation, comparing record counts across source systems, S3, and Iceberg to guarantee data integrity"
+      ]
+    },
+    {
       title: "TMS Queue System",
       company: "TietoEvry",
       role: "Senior Software Engineer",
