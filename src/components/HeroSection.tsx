@@ -34,10 +34,11 @@ export const HeroSection = () => {
             </div>
             
             <p className="text-lg lg:text-xl text-primary-foreground/80 leading-relaxed max-w-2xl">
-              Versatile Full Stack Developer with strong expertise in modern JavaScript frameworks 
-              (React.js, Vue.js, Angular, Node.js, TypeScript) and cloud-native development across 
-              AWS and Azure. Building scalable web and backend systems with a focus on innovation 
-              and excellence.
+              Versatile Full Stack Developer and Data Engineer with strong expertise in modern 
+              JavaScript frameworks (React.js, Vue.js, Angular, Node.js, TypeScript) and large-scale 
+              data engineering using Apache Spark, Airflow, Iceberg, and Hadoop. Experienced in 
+              cloud-native development across AWS and Azure, building scalable web applications, 
+              backend systems, and reliable data platforms with a focus on innovation and excellence.
             </p>
             
             <div className="flex flex-wrap gap-4">

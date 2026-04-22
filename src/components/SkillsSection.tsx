@@ -90,7 +90,7 @@ export const SkillsSection = () => {
                     <Badge 
                       key={skillIndex} 
                       variant="secondary" 
-                      className="bg-accent text-accent-foreground hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
+                      className="bg-secondary text-secondary-foreground border border-border hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors cursor-default font-medium"
                     >
                       {skill}
                     </Badge>
