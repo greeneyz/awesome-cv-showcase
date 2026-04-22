@@ -70,10 +70,10 @@ export const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right content - Profile image placeholder */}
-          <div className="lg:w-1/2 mt-16 lg:mt-0 flex justify-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+          {/* Right content - Profile image (smaller, more refined) */}
+          <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-card shadow-glow animate-float overflow-hidden">
+              <div className="w-56 h-56 lg:w-64 lg:h-64 rounded-full bg-gradient-card shadow-glow overflow-hidden ring-4 ring-primary-foreground/20">
                 <img 
                   src="./lovable-uploads/50cab3a9-82c5-4254-be0d-3e932175ef37.png" 
                   alt="Asim Imtiaz - Senior Software Engineer" 
@@ -81,19 +81,16 @@ export const HeroSection = () => {
                 />
               </div>
               {/* Floating tech badges */}
-              <Badge className="absolute top-16 -left-8 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '1s' }}>
+              <Badge className="absolute -top-2 -left-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '1s' }}>
                 React
               </Badge>
-              <Badge className="absolute top-32 -right-12 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '2s' }}>
+              <Badge className="absolute top-12 -right-10 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '2s' }}>
                 Azure
               </Badge>
-              <Badge className="absolute bottom-40 -left-20 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '2.5s' }}>
+              <Badge className="absolute bottom-16 -left-16 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '2.5s' }}>
                 Data Engineering
               </Badge>
-              <Badge className="absolute bottom-24 -left-16 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '3s' }}>
-                TypeScript
-              </Badge>
-              <Badge className="absolute bottom-16 -right-8 bg-primary text-primary-foreground hover:bg-primary/90 animate-float" style={{ animationDelay: '4s' }}>
+              <Badge className="absolute -bottom-2 -right-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '4s' }}>
                 Node.js
               </Badge>
             </div>

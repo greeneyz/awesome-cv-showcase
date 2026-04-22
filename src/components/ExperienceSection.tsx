@@ -22,22 +22,23 @@ export const ExperienceSection = () => {
       ]
     },
     {
-      title: "Data Platform Migration",
+      title: "Data Migration",
       company: "Telia Finland",
       role: "Data Engineer",
-      duration: "2024 - 2025",
+      duration: "Jul 2025 - Present",
       location: "Finland",
-      technologies: ["Apache Spark", "Apache Airflow", "Apache Iceberg", "AWS S3", "Hadoop HDFS", "Python", "Kubernetes", "Parquet", "Data Engineering", "ETL"],
-      description: "Led and delivered a large-scale data engineering program for Telia Finland focused on migrating diverse enterprise datasets from legacy Hadoop (HDFS) and external ingestion mechanisms into the modern Park data platform using S3, Apache Iceberg, Spark, and Airflow. The scope covered IME stream datasets, MFT-based datasets, and API-based datasets.",
+      technologies: ["PySpark", "Apache Airflow", "Apache Hadoop", "S3 (Simple Storage Service)", "Iceberg", "Parquet", "Git"],
+      description: "Telia Finland operates multiple critical data ingestion pipelines supporting telecom, network, and operational analytics. These pipelines include high-throughput IME stream datasets, MFT-based file transfers, and API-based integrations. The existing Hadoop (HDFS)-centric architecture faced scalability, storage, and operational challenges, particularly for terabyte-scale historical data and complex partition structures. The migration aimed to improve reliability, scalability, and long-term maintainability while minimizing production disruption.",
       highlights: [
-        "Designed a chunk-based HDFS-to-S3 migration approach to safely move large datasets without relying on local temporary storage",
-        "Managed partition-heavy historical data (year/month/day) and ensured accurate reconciliation between HDFS, S3 landing zones, and Iceberg tables",
-        "Built and maintained schema-first Apache Iceberg tables to support very wide schemas (200+ columns) with evolving structures",
-        "Stabilized Spark ingestion by introducing a file-by-file ingestion model, effectively resolving repeated OOM kills and Kubernetes pod failures",
-        "Implemented ingestion logic to dynamically align schemas, add missing columns, normalize timestamps, and handle type mismatches prior to Iceberg writes",
-        "Enabled safe re-runs and partial recovery, allowing Airflow DAGs to resume ingestion without duplicating or losing data",
-        "Orchestrated and monitored ingestion pipelines using Apache Airflow, ensuring reliable scheduling, alerting, and operational visibility",
-        "Performed detailed data validation and reconciliation, comparing record counts across source systems, S3, and Iceberg to guarantee data integrity"
+        "Led the end-to-end migration of IME stream datasets, MFT-based datasets, and API-driven data pipelines from HDFS and external sources into S3 and Apache Iceberg",
+        "Designed and implemented a chunk-based HDFS-to-S3 copy strategy to safely migrate very large datasets without relying on local temporary storage",
+        "Built and managed Iceberg tables with wide schemas (200+ columns), handling schema alignment, missing columns, and data type inconsistencies during ingestion",
+        "Developed and optimized Spark-based ingestion workflows, resolving repeated OOM kills and Kubernetes pod failures by introducing controlled, file-by-file ingestion",
+        "Implemented robust handling for corrupt, non-Parquet, and mixed-format files, ensuring ingestion stability and failure isolation",
+        "Orchestrated ingestion pipelines using Apache Airflow, enabling reliable scheduling, monitoring, alerting, and safe re-runs",
+        "Performed detailed data validation and reconciliation, comparing record counts across HDFS, S3 landing zones, and Iceberg tables to guarantee data correctness",
+        "Collaborated closely with platform, infrastructure, and operations teams to stabilize production pipelines and align ingestion patterns with platform standards",
+        "Successfully migrated terabytes of critical telecom data into a modern, scalable Iceberg-based data platform, establishing a repeatable migration framework"
       ]
     },
     {
