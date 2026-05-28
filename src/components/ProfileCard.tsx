@@ -5,14 +5,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Briefcase, Dumbbell, Plane, Target, Sparkles, TrendingUp, Code2 } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from "recharts";
 
-// Years at each company. TietoEvry is the primary employer since 2017 (incl. Kela engagement).
-// Other entries reflect notable consultancy assignments delivered through that period.
+// Primary employer: TietoEvry — since May 2017 (continuous).
+// Chart shows customer engagements delivered while at TietoEvry.
+const tietoStartYear = 2017;
+const tietoStartMonth = 5; // May
+const now = new Date();
+const tietoYears = +(
+  (now.getFullYear() - tietoStartYear) +
+  (now.getMonth() + 1 - tietoStartMonth) / 12
+).toFixed(1);
+
 const experienceData = [
-  { company: "TietoEvry", years: 8.5 },
-  { company: "Valmet", years: 2.5 },
+  { company: "Tieto Care (Lifecare AI Assistant)", years: 1.2 },
+  { company: "Kela", years: 1.0 },
   { company: "Ilmarinen", years: 1.4 },
-  { company: "Plandent", years: 0.5 },
-  { company: "Kesko", years: 0.8 },
+  { company: "Plandent", years: 0.8 },
+  { company: "Kesko", years: 1.0 },
+  { company: "Other Tieto Projects", years: Math.max(0, +(tietoYears - 5.4).toFixed(1)) },
 ];
 
 const techStack = [
@@ -120,15 +129,23 @@ export const ProfileCard = () => {
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
                 <Briefcase className="w-5 h-5 text-primary" />
-                Years of Experience by Company
+                Customer Engagements at TietoEvry
               </CardTitle>
+              <div className="flex flex-wrap items-center gap-2 pt-2">
+                <Badge variant="secondary" className="text-xs">
+                  TietoEvry · since May 2017
+                </Badge>
+                <Badge className="text-xs bg-primary/10 text-primary border border-primary/20 hover:bg-primary/15">
+                  {tietoYears} years &amp; counting
+                </Badge>
+              </div>
             </CardHeader>
             <CardContent>
               <div className="w-full h-64">
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={experienceData} margin={{ top: 10, right: 20, left: 0, bottom: 5 }}>
+                  <BarChart data={experienceData} margin={{ top: 10, right: 20, left: 0, bottom: 40 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                    <XAxis dataKey="company" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} />
+                    <XAxis dataKey="company" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
                     <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} label={{ value: "Years", angle: -90, position: "insideLeft", fill: "hsl(var(--muted-foreground))" }} />
                     <Tooltip
                       contentStyle={{
