@@ -143,7 +143,7 @@ export const ProfileCard = () => {
             <CardContent>
               <div className="w-full h-64">
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={experienceData} margin={{ top: 10, right: 20, left: 0, bottom: 5 }}>
+                  <BarChart data={experienceData} margin={{ top: 10, right: 20, left: 0, bottom: 40 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
                     <XAxis dataKey="company" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} />
                     <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} label={{ value: "Years", angle: -90, position: "insideLeft", fill: "hsl(var(--muted-foreground))" }} />
