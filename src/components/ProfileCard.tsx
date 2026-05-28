@@ -149,6 +149,37 @@ export const ProfileCard = () => {
             </CardContent>
           </Card>
 
+          {/* Tech Stack Radar */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg flex items-center gap-2">
+                <Code2 className="w-5 h-5 text-primary" />
+                Tech Stack Proficiency
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="w-full h-80">
+                <ResponsiveContainer width="100%" height="100%">
+                  <RadarChart data={techStack} outerRadius="75%">
+                    <PolarGrid stroke="hsl(var(--border))" />
+                    <PolarAngleAxis dataKey="skill" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} />
+                    <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
+                    <Radar name="Level" dataKey="level" stroke="hsl(var(--primary))" fill="hsl(var(--primary))" fillOpacity={0.4} />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: "hsl(var(--card))",
+                        border: "1px solid hsl(var(--border))",
+                        borderRadius: "8px",
+                        color: "hsl(var(--foreground))"
+                      }}
+                    />
+                  </RadarChart>
+                </ResponsiveContainer>
+              </div>
+            </CardContent>
+          </Card>
+
+
           {/* Certifications */}
           <Card>
             <CardHeader>
