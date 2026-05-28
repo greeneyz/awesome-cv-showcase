@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ProfileCard } from "./ProfileCard";
 
 export const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -72,30 +73,9 @@ export const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right content - Profile image (smaller, more refined) */}
+          {/* Right content - Interactive profile snapshot card */}
           <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-              <div className="w-56 h-56 lg:w-64 lg:h-64 rounded-full bg-gradient-card shadow-glow overflow-hidden ring-4 ring-primary-foreground/20">
-                <img 
-                  src="./lovable-uploads/50cab3a9-82c5-4254-be0d-3e932175ef37.png" 
-                  alt="Asim Imtiaz - Senior Software Engineer" 
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
-              {/* Floating tech badges */}
-              <Badge className="absolute -top-2 -left-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '1s' }}>
-                React
-              </Badge>
-              <Badge className="absolute top-12 -right-10 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '2s' }}>
-                Azure
-              </Badge>
-              <Badge className="absolute bottom-16 -left-16 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '2.5s' }}>
-                Data Engineering
-              </Badge>
-              <Badge className="absolute -bottom-2 -right-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90 animate-float shadow-lg-custom" style={{ animationDelay: '4s' }}>
-                Node.js
-              </Badge>
-            </div>
+            <ProfileCard />
           </div>
         </div>
         
