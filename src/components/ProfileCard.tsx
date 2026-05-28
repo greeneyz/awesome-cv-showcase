@@ -129,8 +129,16 @@ export const ProfileCard = () => {
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
                 <Briefcase className="w-5 h-5 text-primary" />
-                Years of Experience by Company
+                Customer Engagements at TietoEvry
               </CardTitle>
+              <div className="flex flex-wrap items-center gap-2 pt-2">
+                <Badge variant="secondary" className="text-xs">
+                  TietoEvry · since May 2017
+                </Badge>
+                <Badge className="text-xs bg-primary/10 text-primary border border-primary/20 hover:bg-primary/15">
+                  {tietoYears} years &amp; counting
+                </Badge>
+              </div>
             </CardHeader>
             <CardContent>
               <div className="w-full h-64">
