@@ -16,13 +16,27 @@ const tietoYears = +(
 ).toFixed(1);
 
 const experienceData = [
-  { company: "Tieto Care (Lifecare AI Assistant)", years: 1.2 },
-  { company: "Kela", years: 1.0 },
-  { company: "Ilmarinen", years: 1.4 },
-  { company: "Plandent", years: 0.8 },
-  { company: "Kesko", years: 1.0 },
-  { company: "Other Tieto Projects", years: Math.max(0, +(tietoYears - 5.4).toFixed(1)) },
+  { company: "Tieto Care", years: 1.2, role: "Full Stack / AI Developer" },
+  { company: "Kela", years: 1.0, role: "Full Stack Developer" },
+  { company: "Ilmarinen", years: 1.4, role: "Full Stack Developer" },
+  { company: "Plandent", years: 0.8, role: "Full Stack Developer" },
+  { company: "Kesko", years: 1.0, role: "Full Stack Developer" },
+  { company: "Other Tieto Projects", years: Math.max(0, +(tietoYears - 5.4).toFixed(1)), role: "Full Stack / Data Engineer" },
 ];
+
+const CustomBarTooltip = ({ active, payload, label }: any) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload;
+    return (
+      <div className="bg-card border border-border rounded-lg p-3 shadow-lg">
+        <div className="font-semibold text-sm mb-1">{label}</div>
+        <div className="text-xs text-muted-foreground mb-1">{data.role}</div>
+        <div className="text-sm font-bold text-primary">{data.years} years</div>
+      </div>
+    );
+  }
+  return null;
+};
 
 const techStack = [
   { skill: "Frontend (React/Vue/Angular)", level: 95 },
