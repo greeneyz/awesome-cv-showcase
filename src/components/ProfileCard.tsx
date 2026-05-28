@@ -2,21 +2,33 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Briefcase, Dumbbell, Plane, Target, Sparkles, TrendingUp } from "lucide-react";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell } from "recharts";
+import { Award, Briefcase, Dumbbell, Plane, Target, Sparkles, TrendingUp, Code2 } from "lucide-react";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from "recharts";
 
+// Years at each company. TietoEvry is the primary employer since 2017 (incl. Kela engagement).
+// Other entries reflect notable consultancy assignments delivered through that period.
 const experienceData = [
-  { company: "TietoEvry", years: 4.5 },
-  { company: "Telia Finland", years: 0.9 },
-  { company: "Kela", years: 1.0 },
-  { company: "Previous Roles", years: 3.0 },
+  { company: "TietoEvry", years: 8.5 },
+  { company: "Valmet", years: 2.5 },
+  { company: "Ilmarinen", years: 1.4 },
+  { company: "Plandent", years: 0.5 },
+  { company: "Kesko", years: 0.8 },
+];
+
+const techStack = [
+  { skill: "Frontend (React/Vue/Angular)", level: 95 },
+  { skill: "TypeScript / JavaScript", level: 95 },
+  { skill: "Node.js / Backend APIs", level: 85 },
+  { skill: "Cloud (Azure / AWS)", level: 85 },
+  { skill: "Data Engineering (Spark/Airflow)", level: 80 },
+  { skill: "DevOps / CI-CD", level: 75 },
 ];
 
 const certifications = [
-  "AWS Certified Solutions Architect – Associate",
+  "Microsoft Certified: Azure Developer Associate (AZ-204)",
   "Microsoft Certified: Azure Fundamentals (AZ-900)",
+  "AWS Certified Cloud Practitioner",
   "Scrum Master Certified",
-  "SAFe Practitioner",
 ];
 
 const hobbies = [
