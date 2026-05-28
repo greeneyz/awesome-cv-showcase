@@ -5,14 +5,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Briefcase, Dumbbell, Plane, Target, Sparkles, TrendingUp, Code2 } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from "recharts";
 
-// Years at each company. TietoEvry is the primary employer since 2017 (incl. Kela engagement).
-// Other entries reflect notable consultancy assignments delivered through that period.
+// Primary employer: TietoEvry — since May 2017 (continuous).
+// Chart shows customer engagements delivered while at TietoEvry.
+const tietoStartYear = 2017;
+const tietoStartMonth = 5; // May
+const now = new Date();
+const tietoYears = +(
+  (now.getFullYear() - tietoStartYear) +
+  (now.getMonth() + 1 - tietoStartMonth) / 12
+).toFixed(1);
+
 const experienceData = [
-  { company: "TietoEvry", years: 8.5 },
-  { company: "Valmet", years: 2.5 },
+  { company: "Tieto Care (Lifecare AI Assistant)", years: 1.2 },
+  { company: "Kela", years: 1.0 },
   { company: "Ilmarinen", years: 1.4 },
-  { company: "Plandent", years: 0.5 },
-  { company: "Kesko", years: 0.8 },
+  { company: "Plandent", years: 0.8 },
+  { company: "Kesko", years: 1.0 },
+  { company: "Other Tieto Projects", years: Math.max(0, +(tietoYears - 5.4).toFixed(1)) },
 ];
 
 const techStack = [
