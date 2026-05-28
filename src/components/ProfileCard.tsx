@@ -161,14 +161,7 @@ export const ProfileCard = () => {
                     <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
                     <XAxis dataKey="company" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
                     <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} label={{ value: "Years", angle: -90, position: "insideLeft", fill: "hsl(var(--muted-foreground))" }} />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: "hsl(var(--card))",
-                        border: "1px solid hsl(var(--border))",
-                        borderRadius: "8px",
-                        color: "hsl(var(--foreground))"
-                      }}
-                    />
+                    <Tooltip content={<CustomBarTooltip />} />
                     <Bar dataKey="years" radius={[8, 8, 0, 0]}>
                       {experienceData.map((_, i) => (
                         <Cell key={i} fill={`hsl(var(--primary) / ${0.6 + i * 0.1})`} />
