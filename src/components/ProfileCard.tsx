@@ -145,7 +145,7 @@ export const ProfileCard = () => {
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={experienceData} margin={{ top: 10, right: 20, left: 0, bottom: 40 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                    <XAxis dataKey="company" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} />
+                    <XAxis dataKey="company" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} interval={0} angle={-25} textAnchor="end" height={60} />
                     <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 12 }} label={{ value: "Years", angle: -90, position: "insideLeft", fill: "hsl(var(--muted-foreground))" }} />
                     <Tooltip
                       contentStyle={{
