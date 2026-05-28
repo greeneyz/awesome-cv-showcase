@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ProfileCard } from "./ProfileCard";
 
 export const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
